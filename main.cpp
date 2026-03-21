@@ -68,7 +68,7 @@ int main()
 void incarcareDate() // citire din fisier
 {
     ifstream fs("Studenti.txt"); // deschidem fisierul pentru a citi
-    if(fs.is_open())             // fix: adaugat ()
+    if(fs.is_open())
     {
         while(fs>>Vstud[NrStud].Nume>>Vstud[NrStud].Prenume>>Vstud[NrStud].ID>>Vstud[NrStud].Medie)
         {
@@ -78,7 +78,7 @@ void incarcareDate() // citire din fisier
     }
     
     ifstream fp("Profesori.txt");
-    if(fp.is_open()) // fix: adaugat ()
+    if(fp.is_open())
     {
         while(fp>>Vprof[NrProf].Nume>>Vprof[NrProf].Prenume>>Vprof[NrProf].Domeniu)
         {
